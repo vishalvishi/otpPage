@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federal Bank Otp Page</title>
+    <!-- <link href="./federalBankOtpStyle.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <link href="./Federal Bank Otp Page_files/federalBankOtpStyle.css" rel="stylesheet">
+    <script src="./Federal Bank Otp Page_files/jquery-3.5.1.min.js.download"></script>
+    <script>
+      $(document).ready(function () {
+       $.ajax({
+                      url: "/vbv/auth/pageLoaded",
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      data: JSON.stringify({
+                              "txnid": $("#txnid").val(),
+                              "method":"BeforeLoad"
+                      }), success: function (response) {}
+           })
+      });
+      
+          </script>
+</head>
+<body>
+    <header class="container">
+        <!-- <img src="./imgs/FederalBankLogo.svg"  class="bankLogo" alt="FederalBankLogo">
+        <img src="./imgs/visa_2022.svg" class="visa" alt="visa logo"> -->
+        <!-- <img src="./Federal Bank Otp Page_files/FederalBankLogo.svg" class="bankLogo" alt=""> -->
+        <img src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTU0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjE1My42NDEiIGhlaWdodD0iNDgiIGZpbGw9InVybCgjcGF0dGVybjApIi8+CjxkZWZzPgo8cGF0dGVybiBpZD0icGF0dGVybjAiIHBhdHRlcm5Db250ZW50VW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIj4KPHVzZSB4bGluazpocmVmPSIjaW1hZ2UwXzFfODEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMC4wMDQ4MTgyOCkgc2NhbGUoMC4wMDI0NzUyNSAwLjAwNzkyMjkxKSIvPgo8L3BhdHRlcm4+CjxpbWFnZSBpZD0iaW1hZ2UwXzFfODEiIHdpZHRoPSI0MDQiIGhlaWdodD0iMTI1IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVpRQUFBQjlDQU1BQUFDeUoyVnNBQUFBbkZCTVZFVVlWNW4vLy8vKy92NzZxREVBVkpuNjl2RC9xaXowb0JnQVRKUUFTcE1BVUpZQVJwRU9VNWNBVHBVQVNKSmVnN0tKb01INCsvMjB4TmtBUTVBNGJLVm5pYlR2OC9kSWRLbnM4ZllnWHA1M2xyMEFPWXpmNS9ETTErWFQzZW1QcDhlYnNjMit6TjczeG8zYjVPNmx1Tkl1WktCV2ZhNjN4OXNBTklvQUw0Z0FQbzdtcldCQ2NLZCttcjlaZjYrSm84U1hyc3NBSzRjQUhvSnRrYnZnSlFtdkFBQWJjMGxFUVZSNG5PMWRhYnVpeW5hbWpFbVkzWWdpMktCeUJYY2ZvMXNULy85L1MwMXIxVUJCbjN1L2hDY1A2OE01M1ZEamV0ZGNKZTF0WW0raFdWSDQ1UzJnekkwV1VHWklDeWd6cEFXVUdkSUN5Z3hwQVdXR3RJQXlRMXBBbVNFdG9NeVFGbEJtU0Fzb002UUZsQm5TQXNvTWFRRmxoclNBTWtOYVFKa2hMYURNa0JaUVprZ0xLRE9rQlpRWjBqOEJTaHlQTllRMy94SzY0OFArUDZGL2ZvTi9BS1huVkdsa3Q5RGY5WHhFUHdpQ05FMmpLQXI4MERYMjJ0bVpqK3hIU0ttZi9Ia3p6aGErejViZ1QvVUwxRHpCSDZmNUY0UkdzS3huZTRvZk8wcVVpOGFJdlNSbjcybFEwbkxGS05OcDFmaGVjakdmeVRjMVpVVFEwajhWZ2s3YjV5NUpCbFBXanI0WmVZZWVselExMHJWOUgveHdldS9oZVRkOHVHc1pOYzFFditCVUFKWE41US9USk4zSUdPUExlaEt4cHlNYm1CQkNlVWlhUUwxL1VHWXg0cHQyOUovV2xJd01hZXQ3ZnV0NFRzaUp6cHRleldmMXBmZmpQdzlLeUpPQllyMnFqK240MmlpdHMvTmdWL0ZlOUMwbU9KMlUxalRCZUZ1dkludW52cE5tVEJtVFRnNThpS21peUQ5LzR4eHhYd0FyM2ZOT2c5S3Z5TW9tY2ttb2xBeWYwemN0WFdWVW1LL28xRzF2ek4yNytxNzR6bVByRlNITmxISHhMN3I4d1k1ZWZCQnluYkJmbGJsSUtrN1Y2RFJCeThSd1FQR0JiaXdmV1ZjcmhpY2hseEZrbSt5NUx1V2paa1RrSmtHSmJ3NytrYS9RUzJvbktHemUxQUVqNlRUVzB0MDRRWGxRcWRvTlhwRnliSEVlbDVsczhKQ0txZGp4aFBRUDVpRlpQOElGeHZ6U29YVFVSSzFJRnpuN1NKa2xXU1RhOGI4OFlSQmZNbzljM2IzL0FFcjRjWUZDRFdXWU9VR2hjRkZsZDcwcGQrSGtvRlFqUFNWVnhvdlR3Q25oM3I4cFh3YXJsMkxxRkc5SkRtRWo1ZHJkTnFVTUpyc2hpNUlMSFlPOG5NaEhwVlRXUUxaYlNVdkExOWVRNlJuL0JNclpCY3FOdGgrMVFFN2xZanovQWQ2R2J5Y29YS3ErWFBPZFIxRGhLamZrUFhWcXZOdDdGRXdsRjBRNDRRa1FReVluWk9pNUpQYms0NXJGRjFhZm0zUC9XMkx3RUd3T3dMUVZZN3I1QjFEOHJiWjRwSjQ1TDhkend1WkZiVVdDbGplNU1XbGU3TDUxcWttVjBYTm9vUVRsekVpUWNnQ0s4QmRjYmNjMi9RWUQ4dDBVT0krVFNWem95V2xvL0FPT1BTRS9qbWw2elkyQUtWdko4YmF3eGNQRStxWkFDVURUamw4YXJiMzRBM1p5YjVEYUw4bG93K2Z6K1c2QXVXaTFwYWlRY21QMFpmb25wWW9VbThmdTlteWhwME5PUFNuRFNnSVZDZFBxRHBrRWdiQ1JZeDdrQnhtME9GVWw0VkVEeVFicG1SZEs3RmVQWWZ4MzA5eElVQ3YvUWpGQnNmc1pWK1JwVU1BU2xQZFFJMlhXU0IvR09xbjlrcXZva2dSVkI3eXRoZjFONVNwUGVXeDNCcW1xMmFzdzJJRnBkanJFVkw2MUlJTmd3ZVVIZ05DRU1FbUlJNUFTQi9acmlmQm4rQTRVckJnRWJ1RlJEczg0RzhnUmFyYUo0QVc5amxPNTdTUW9rUnp3WkxrekNIQUt4MzRiWlU3bGswTUIyc3lmSmVXb0k1WkJIUVJPNFVGRmxzT0ZnNTIwVEV1OGtjOUgzU2dLR3hVcTNxTVNZa09HNmJVUHB2YmJYcXlLSVVsdHo2UmsxbVBwekFyM2xIeEFRTitUK2Rja0tEQmdheTBKQXB5QlBjZDRqd2JCYW9wS3dpQjJYVW1rTHc3OUxVeThjam5ZemJIQ0dLQmVXUnM2eXNsR2NnaEc0SGFJTktoU1FYOEcwL1RBeE5KbUltZ0RGd3VMRFltMEZxdEFVMXk2cDJRRHcyM0hnbUU1K0FRb09HQm44US9NbXNQL3JSMUdKZDdKYUlRbHRSQWtxTGhkNThIS3dBdlV6dEhVdjZDa21zNGprVTV0d0VhZHBGeVVZaDR3dVVkN21yVEZTUTRXa3hLY253bXRPUmNzbThVdW1EdSt3L0N3SXM3MkE1b0VCUWEwQTVsUWNuNmcxQjZyOVBCWGhoSDJYMHBWNGgvTm5sdnpnYmtDN29CR3ZoejRZYTNCc29NUUxOZ21WNThINUVJbS9XQ05iVkMwOEg1UXBQSmJCWW90K2NGVldXRTBaVWUvejhEZ1R0Wkt2V2xRMEd6YmdZeXNVZ3cweUZQQ2JrcVdYMkx1Z0Y1d2FNRlJDQUN2ZEZSVGxBeFR6Mlp5Wk9EVWh2T0EyNUZ0SUI2MHpWZWtpa2tEb3hBWU5RM1RSMFJnaFJNdEFiaXR3ZDY2QWdxVHBrREJ0TUhXWGVEOE1CVkFQVEJaRHZVb0dvQWxrQ01NQVRVY0pOOWRPZUpUakZLTkdXZEZRNmMybUFma1FyWVIwUzJ4eFNUVTZ3dDJzQUgxSzNpdEo1R0JISjRwT0piQmRsQmNHVVpyd3dWT2dBS1dZR1VOZzJabTZCbWxjZzNpc2tUYXIxME1CdHdSSklBWmdXd1JmZG9na01yMWdxZ1pGRWVyVVpPSGl6eHJYS05hZDVhUnQyWHdjcDN2ZGxBc3phZktqYlc4QTJTV0dSaHd2d1VFZkk2OFpyakFDVkN3cnBacldVcXNxaFNrQ255TjJHUlN1Y0NGSXFVbk1OdGdYazUzdlMrdjd2dFd3cEIyV29odkxCcnNuUGl2YWFPSms0azZZZTdJelhJRXU3RmNTdkl5SmpIOXA1Ukwwb0laSlN2TTBORTZzclEyQkFXQi83a3FBRFpOYW9xMEJPWG5xT2dUcXlyRjFpRG1DekYzdERPYkN4Z1ZNQzlsWjNUZWFGSWxPeWVna0FOTEJBdHJHbUYzaHR4eWFURVNGaXI2TklnOG1kd09WVmVHYU45OE1rdk1JUER1SXZBdHFwWWxLM2l5REdDV2J0MjFNcHNtUVlGd3dhcFJKYzZTR0QvelNVZmNyRlF1R3BDa3JrRUpGOXFnVUZHTEY2WWJhRGtJUnlFQU9id0hvUjRHQ3hNSlBlYU8yKy9tQkV3amUxT0VaZDVJU0NYbHpDam5nS1U5WTB5bEZCeXRCWFArNXVFUk9mOGhHSmJjbWdCbGJRd29oNlhzRGxySEN5SFF3WWlibFZFb3VhYVY0OXdNZUNobHN3dTlkWFZzUU9NSDJWQU00RVUzR2VZb0VZQ1F3a29wRGNvelhhamtINzlOR3huTHZKRnNjK2ttaldRWExPMG5EZzg0eEZVc1ZBL0t6Y09qMFZNeGl5WkF3VnF3emZySWZjVEYzS1lyZCtRa1NobmtGSTBjY1ZYY3J4dEtCSzlzUmNIYXh5R09NMkZhMUd3WUxFemt6T0Z3Q1lPMEJncGlwSW9yaDBXT3BLV2xzcFRnK1pBOFNRVC95VVRGUER4eUZUYWRDeHdIeFgzRVJWa2ZGRTVRbUFYcVIwdTBYRUZJa3p2T3NSaGJZeFZPVzY4NjI5YURETk84MkpmN1Y3aUJDRi9IN1lUemZET3dBa3dvOU5MWmhRY2pLejFpOXFXeXNyV2xxcml3WmJOSzM4N3pUZXZ3YVBRQTJPTDhCQ2pPSXk3SzdzcDk3c2pPYzhITkR1cnBGWUR5ZFBabEZXUzNFQXh1SjZRWStjZFlVMUVIV2hBeFRod0dRM1JrVEdOZFlZaTBVNURnR3lKSDlWNUV4REp2VmVhY3ZOa3doUkpNeUIxeG5rRXB4OG41Y1ZEc0FjV28xR2E0ajdpWUpHRTBPQmlzbDZGTWZuRjIxaXNTK214RFRMQkd3Z3BJVXFDcFZZVFgvbmdOR3Jmc2tndXpVb0l4Tnl0c1ErN1ZLdHh3WGhrblhoR1ZvdzhINGx3d2ZjdjlqcDdZbVNzY0J3VlBIZXh6UitDOGVYR0xIVG5EK2pOYkhxUnBJcGNjVm1sZSttS0JBWjV6S2tqSWVlQWF3R0tMZzhKSXVLb1YybW9mdURrZWVrSk53VHJnZk9rNXVZUldzRkE2bFVJcmZCK05JRFAyQ2h4eUU4Z1VocTlwNEg1Sk8xMGdGc05QZ0FJWnhkcTh4d2dyeW95anI1RG5qcER1MlN3QnRJNjVqSm0za2RHWEgzR2hFTWoxbDVkcWVKTVBaRmpZRzBoRk1TZ0dNWFVVbG9Fd2Q5eXNZKy9SUVVsS0M2SXhieFRYQTRiVkhvaDZBWHFNVWVnd2p6MndqVFhFMFZHWEpySmEzT1E0S0JCSkdTRnBySXJqOWRCcGpaWm80Y1VCamtnY3R5SHduQk55dS9idVdLL3NMOTB1ckFYeWJYVFFFNWZaQUVpdWE3Ry9obUJPczVReVhDbk14U3Z0ZzNBQ29kZENzS0xUUWcxd3YyU1BxWC94NTF1d0U2REFhWlJkb0llczNlRkx4M0pITHhjMXY4ekxYYVY5UVhETzJmNkd5MnJEQkRENUF2TWtxalRwd1l5QXNiQnR4OUg2K2lYNG1TeXA0Yms1UkNjWWN6OXpQb2tzeEdqSDBpQS9pblVCaGxrUTF6TzJLUWVZWTJvdlFyUkptZ0FGNm1wMklnaVM1dkNsb09pMlJRZkhlSTNnTU5OUkJWbEx2TG9JcXJqRHd5QThiMno0aGVIdjcrM0tBQUUwSjNQZm5CWnRaSFNFSmYvVXpIaGpQRzlzNVNSZ1Y5RnpnZnhvczBUZmxrdG5QTUNpK1NVSk1lYkRlejJqTkE2S2NTZERKNmhlT1M2WkpIS3hkazBmVGl3dS9zT3dQc1o4VUJOK2hYaUgwRllWdjFQeWFMcnBpM21JNkxnOW9DYVNnNk9OVGM2R1BkYk9HNjFKZ0JPUVQ2NTAyYk91OHZMR2VFaEFHUkpoY2VxUEJ5cmpvS0Fsc0U4elFFd2NJVGNVdEszY0VmbDlTUGFtNmRBYlFWQjNETU14VmVtSktZNktCVExmQnZ0WlR0eFpCUXVBWmxuT0xHT3RrZXVFSzgwcWcrS1hSaVJsSHJGdzNjWERJNTZ6d1B1eGU5MUk0NkRnRVpjdDFHQ0JodjNHY2tkUWxEcUIwbFF4REF4MUlZQXlzS1VxN3FLYjZDVmFRTWVwdzJBQUg4MHl4T3ZDNWtYT3krdWlnVzhzMWZLcWNCVkJXeEFHZW13ZkZFcEF4WFVUUkdmRktDaGdDZXgwWitKaUZaWm96Y2NRbXRDUUMySkpCOU5RcW5ydHhPWmJiK2NzeGdFUGhONUN4RGh4R0F4M1k1Vlp4dXlLZ1JJNjYwQnlFdkJjRjZkWHBXWUErNUtNUVk2SEJIeXFBQlBuS1VYMnBrQUJTMURiMXdta0JWb05MUkRzenJ6ZUUwTkJqUGFBV05KeDVRS0VZTVZlUWRKbDNDVjEvd0JEN2xQazI1V3RCVU5DQzREN05zUXZLU2Nta2NQQ0xteXZpbmZ0d0o2Qys4MEVDQUZrL3FTYlJHVUNGRmVhNG1rbnZrTUxoTG1qbWRsQWhLdCsyT0ppR2dSMTNGQ2pxbWptRjJYWU9vb1J6M2o0anlHbys2WXJKelFwYUdQaGNnNDdBRWxlVTVQVVFwWWdxQjZVWFZNc1NnalRsc0wxU0xFTGpPc2N4VUdEeGFPZ3lOc1hBNkVHM1hYVVlVR0M5RnBvMGdNbXJQWUNkeUFkQ1hkZ3VBTlVGVlhzaGgvRmtOWTRzNFJiN2N5MG9MK1lTSnZ4a0J0R3hpSUJ0M21RN1gwYmswQlFMUHdyMUlpSHlSRFlLeWwyOHZBSW5RK2tXUWlUbThaQjZVZHVNa0orMjZiMlZXRGNMNWJ1NGlSNmd2ZmpqSXJsb0p2UTdxdHlSeTRFU2xWQUpyRDJVVWZHNmI2djNYZENmekdWTzJMMVNDelJSMDJtYmluQTlEN1hwd2pnNUY4STAxb1BEQ3grd21Bc0swREZSY0dPRUxUM3hPV3ZVVkF3a2hya0hIQ0cwKzkwWW5LSGQ2N3Y3R2UzdnRjZnpxVjV0QWMyLzhmb3kzOU5tcGp1QURJNlZKVVlLeGJtZ3ZUN2lIakxLczdWejM5dHBaRWcxcjhDU2xGL2dYRXpQVyswVUFVa3ViakJyUW5YcnlyUmdUS3VxdXVSS05oWWQ1a3lZT09nd0lCMjdoM2cvUXlEMkNpUnpNbXpzaXd5M1JnenF4U3E3ZGlkQzJidVZPNG9Gb2FWUjJuSGdkLzIzUmI0OFFYTFIvR1dWYUVvdTVpOGs5ZTVWMW5kTk0ycFVLa2hPMU9GL25hQ2hFa3BVeS93cXM2RHRGQmNHT2FHYnZqVE91MzNTdmJka3I4RFNnald3dGJSd0gzRXhac1pMRGRlMS96WDZDTS9yZU9uMmVBTzhHZG9VS0txREY0TzBpTlVhYnJ6OU9RQTNYVDZLcTQyVjhrVkJXWEdGbU5NWjVtSWdsZDF4OTArUTRJUUJ0amdwM1dVVWlqSGtQT29BUnNGQlMyQjNkVjFuWUkyRzl3U01ObSs1cE00RHpQRjd0QWRRR0tGcXNMUGc3R3VmeHFlc0lBekNwd0gxVmJsd1hYdXlCR2lWaEZpYmtmUkRUSm1mdkRUam9hUWpKaGZFakZrQUVHSW50TGhiNFBkUHgyYkJBVnZ4bGxhNWpqaFpzMzRUeGFkZXNDbTcrUW1uWWVaWW5jZ2ZzcDd3ajFwZGxxa1pIaFl5UVNud3ZKdGh4WmI3c0g1dTBxNnhLT3ZnZ3NIdThERk1lTVpqSWVRblBLR3lJZ1lja2M5cFZOYkdjb1hybkVFRlB5NWd3MksrK1lEczYvaHkvR0tuZlUrWUF6N2RGUTJZVzRFVHNJTDNJQ3FoL2hLaGh0SGZRWnVvZjZFTG9FaDVnMFNoMXpRSlY0ZmlSWTVPV3BUbU4yd1ErK3hLODQ0UnkwOElTQnBYcTJCQ0kraU9wTGlqb0lDVjhjSDErcGNuSmMvVkxKdkNUREttcHU2S1pLNkx5ZXhZQm1PZWJYZmxjQTlubFdzWk5nUjY2cWJKNEhyUGd3eFlmU05FcnZ3SzZjUCs1MS9BdUE2U3RqS3FWRDFnT3MwbzhjRGNiL2lqZ3dPajZ5SWdHcWE5R2NqQm13VWxMWHNhQnRPL01TRlNTd1N0ejhPc3NwTzNiN1NMKytFcGJQelQ2eSt6S0ZwSm56UWcxby82TmU2UXBaQXZpenpvMk53NndZWTFUbGpqZlgzczArNUhhb2dZQnhjYXVKdjVjc21ZSVZGUHJDVG9XS2ZlKzdhMTlqSGVCcy9JQkJwM0tveW5qeHVPTzBIWDZTcGVwcWdQQTZIMiszMkk5cHNmbTRQYmlOazV0SS9idlRoWWVjTnZ4RFUwODRQM3ZubkIvb2VkdnA4dWlxRTh0bFBkWkRrdk13VzMyUzdjTGZmRE1oeVF2RUR4cUxyMkZWQmhGL0w2ZUdGbTFFd1h1eFZVKzNrTEdMUy9YQlAvSzN4MlNmSFhPT0hYRnEyUGZMT1Rzci9UbGRIMzloNDdtcnJmT2xvNWhyYzd2UEhaZjl4a3VuOS9mMFJSMm41TXQ0TWFRRmxoclNBTWtOYVFKa2hMYURNa0JaUVprZ0xLRE9rQlpRWjBnTEtER2tCWllhMGdESkRXa0NaSVMyZ3pKQVdVR1pJQ3lnenBBV1VHZElDeWd4cEFXV0d0SUF5UTFwQW1TRlJVSDZTOVVLekl2L3AvZGQvTERReitnY0Y1ZDhXbWhVeFVQNnYxN0NRUlFzb002UUZsQm5TQXNvTWFRRmxoclNBTWtOYVF1SVpFZ1BsUHhlYUdmM0QrL2VGWmtlZTh4ZHZDLzJmMGdMS0RHa0JaWWEwZ0RKRFdrQ1pJUzJnekpDOGpHVDRsd3ovbU5XblU2MWVyTEpzWmJWaS84MEsxVVNSZWxyeVhxdU1mNXdnWS85bVFZRWp5bmNGZTFmbzdkVDgvTU5QZGNuZnJyS2lxUFdWVWlyc0QxeTVhU1hXbnEzVTd0amF5WER0MmlaSmVUMWRhOGYyM0h1RzdobSt6dW9DRmw2eWIwem9heFVmdTZBc0VBUHlmZXJzOU03eEdyNUwwZVZiOFlmMkVPNXVoOHJmTlBMTk5mR1JuYVRubjRMb3dzcnoxa0Yxdk9yck9vWFZlcDBFM3A3M1BIaXg3L3RKOUdCLzRWOG04TU9IK0daRm1YaGg0aWRKdmlIOGEyRUphNGZmZGJqNS9lSGdSYnR6a2ZsNUZQaGVGUWRwOUplYWFodDZmcENHdTVmK0VZdWRXdVByckI0M09mL014RmNvUDJHeERmWVorK1FVbTVuVXZjWmo3d1BzdlZRSjVZQ1hQanA5Z3NJVHUvdjVWczk2MWVER1Q5aVQzWmtOMmZ5TzBpQ3BxaVNJOHBCaThHV3NpTEduREJrTGZQL2VjUTV6ZG5xYzVSN3BmZmg4UmkrK2NGRWNmcjM0OWs2SHUxeGxHZVhhTXA1OGE5R0dZbnphcDFHalhwRTY3K3V5dkw3Uy9NMllIYnpMdXE1UHZFV2Z0a1ZSYnIySXoxTEVTVlBEdTJQNnhkdTFnaU9iWHg4dVc4M3VkN1pxVDNWZFBvS3VwSzhWMDl2b1VaZjF0Z3BDQlZSN1Y5OG9lV3QvUHYzaW9Kd2pzYy8yRjEvL0plVVkxZEZCeVhBbE9kRjQwWVdMYjNPNDk5cnVpblYwTGN2NmtrU0FIam5kMy9oNmszYVVKVzJmTXFCTHR2QTZTRS8xOWRTdTdCV3hWUmRleUZod2JkaGY2cUFxcUMwNHAvbUZnWElLSXJHeEx1ZWdGMTdlUXU5amZwQ2dSQm9vWjhFV0lYajc1S0F0dTh4N3ZzZk9qK2hnKzNTclh1MGl6cHM2aUZvK1M2SkU3Q3U2cUhiWkxvZDlaaUJkdDdRbEJqVUMybFdmYlBEWklWRU1wSHpEcWErY0JSUVVEa2J6bHhpOUV4aVY2K1NtZHZiRi85Zm1hNFQ2OWRSbXphcWM2MVdUb0NUdS9RcEIzWXM1TS9ZSll0bkJqMEFSTDBtcXJham03YlNQMWRTK01CTVhmMTB3Ui8rVmNyWVcwbmp0VW9VOS9RdGZWQkg1NnBrSnluZmc2Wlk0RitaZ2xRWXRJWjlJQStVaFFDRVAvMjJ2NkN2U3ZzT3pTZmZFcGg4T3BFWVNGTHFISGU3VWV5am9Pai9FdVd2T0F2S09HTXZiMy9JeGdCSW5QdUs2ZS9IMlFhNHJ2MFlVRktHc3ZTL1pYb1kvYW8rdzNiMlBaakRKRVJRL3pNSHFBU2lhWE5hSkFJWEtiTTFBV2ZVUmEzMFUyOXltbGNia052QzVKNDVDOWF6bm9BRW9uYThyT0lCQ0FnYktVUWZsSUVHcHVNUVlvTHcwVUU1NVVoT2JmaUtMVFFES1Y0cWZMdHAzYllSSzJ4MWVBVUNFb0p5WmlaTVBxZmtWb0FSZEhJQVVQTGk0N1JWS0ZpRW9PMTh1K1BrK0NZL0pDTFo3Q0VERHMxQ0JvcS9vOTBCVHlsQ0FjbUlNWnlGeGsxY1p1ZDVGaTV0dmZLSEo1OU1YK1ZvOUVxQTBBcFNpenpYRzA0WUNsRFpJQ3pjb1hlcGxZa1hLUTV3MVVKNitiZzRsT1VENVlmKzdCaDdzcTZSZXI0L0E3SFE3OHVSeVFSQ1VDd1ZscTNSZ0s2eFpHZFduSUpDU3pVRXAxckxma0xKZWdGSW5Vc0FLYW10NlhKdmNMaFZrRUt0c2phQjBEL0pNWVVXL1MyS0RJalZsdzl3VnoxTSswWXZzM25JWVgyY3k2Uk8yOWlMUzhwbWRBcVh1MXZsRmIwNUJZZjg3ZWZtWnI1S3BZQ1lpeXdQbFdOYnM3eUpjeWJ6MWlmdDU5azZBSXRvOUV0MktTOW9NUVRsUUQvbEtqb2pzODh4TUV0Z05DZ3JqQWU5VkFpanZMbEtmKzVLZ0ZIUlZGQlVoaUFlMjZDWjFxS29nQ2dwYll0MUxLMEhlZEl4dklSOXl1NnZyOCs3aExCUVVNRHNVRkxvaW42OUlnbEpSU0dsU3dHZmpvSlRmdXp0YkNXZDJGb1pQR1k1Uzc5SHE2MkQvdklZTkNvZWhDY0o3bnQvZWhkNmFOcXhlNTYvZHJ6VVgvV09ZLy9YWFg3Ly9tMDk3aUtONzdoM2w2QmtOY3ZQN3I5Ly93OTZkWlR1MkdmWTV5UUVOUVFsb2pIei85Yk1GUVN4QzlxY3FsN0xIUUFGVUFCUy96ejNGYmcwVWN2S0ZGZVNnYlAxd0xCUEpxSWlldnc2L1UybWVNdTRVK2xUcTV6RU03cm0vMTRUYUFvV3VLR1VyQWxEaVgzVFhmM0hXbG1GOHYrZTdGMStnWVBiV1R4dmdxZ25LSTJITHpSeWdSUHVzOG0wR1VsRGU1M01uQnp1bVc1WTZuYVNtbkxxb0FnekJmQlZDVXk2OEhYdnlOMEhoNGxtZTgxQytPRmVYN3ZMZUpWK1NCZHovVXd2VzZKcnlWTmJPQUlXY0VvN0tFSlRUKzYwaFJFSGh1ME9UNU5GSkw0ZEU2aWMxWDYwZW93OUJvYWl3blNBb05NR2syMll2bUUrNStWSUJCYk96Q2l4OEZwcm1hODM1bmtXNlQ1R2diS2hKdDBOVmFiNElyRkxMc2c1ME9jY1V2dFZuR0ZUZHAreGM1bXZVMFg4SG9ValgxNGZOZm5NN3hHdXhqMDRzNHhsUVlWT2cwTVJwQnd3MVFKRVdqSU9pdVFRNnp6M1JaZ1dmQWlRblpWL2NGTnZkMGxuV1doUHE2QkVVRVNaeUN3YWdhRzZWWnBKMCtKU0hmd2dLUm1lSFJIZjBMUHRoN3hPVnAyVGVWckJsdzBLd3hFam9LU2lWSmxtV282ZU1QVUM4T3hvU0g1TUhHZEFvS0prbjNseGtzdkdSOGJ3RWhSd0R2eW1VbzZlQkVZUVI2T2lGQTJoU2lnb0hwVXcwVzFHbmVuR1FncUluK0ZzWmpqK2psOXh1eDZ5RHRuNWRVM2F3b3FRcFhZNmV4ai8xV2pBTU5RWGV5K2hJMGxsc2drYk42THpxTzk5ankwQ2hjYVpuR09EeUQ2QmtsZHhBWmlhUENwUW1zajYreVdnY2xFb0VOQkJWbmVSNkFCVHlDY0p0cmtKaUtveFFiSkVoTVd5c0NZTG5qZnVLalpaTzBrUmJteldyREZDOFZqYUtFajdwSjJYYk9HaDVsaDRTdzRyMlFkTGRIU0V4VzNnVDhlVU1OSVhzQW1VL3lrQTZzV09BK3ZNU2tMY2k2UGlrbUwySlBlcWdtTW1qOEhGaEx0UGVFVkNvWlIycXltanllQW80eDNISGxDVjhxQTU1dWZkRFlZN2VLZk0zcFNmU1lVd2VFZTQyRFJPWlBDcXJhNE1TYWFCc01hSGVDUDBVb0ZEbGZXR0haQWdLVzFFNnpPZ1RMazFkdmk1ZG9CUVZsamxvN0NlWlVVY1F2RGUveEM2K1phSGpFZWdKZUcxb2psbG1FZjZuRlNGUjRXbVcrNm1Ea3UwaVRONUFQRzQyS0ZJa3loMDNRbG1BL2R1VWMvR2lmT0FtOFVXWlJhQlJKNEtEQUlxcUtYMm40VXVPRVFBcXBXK1lML1lQdXdDdEtveElHckhyZlhxUk04QnlzaUFDdC9GV09ma200YUFZbGFiYTkzakxaMEFUUFRGbnNkWm1LL2IzUTV1dFZ2VTU2dEdTZkFmNXA3MWUyODlkOG5tYkM0RXUxL21YV25hZGErVms4aFBzdTY2N2ZQRzlWckxLOEk0WWs4cEVtL0dUYmxnN1dXZks5bm0xTGVqOFhRWFM5VEF5Vk1hM3ZPKzJsMDNPU3piay9Rc2xZVlhsakNObjVRTlh0NXlEOHBXTElLbU5lSXQzTGdxU2R4V0xkSGNwQktmK3ZtRWNLTnE5WGwraWNYZCsxVm9ybG5wY2puK2tOSCtuZ0hTV283MDdhekhkZ1E5VGhNbVpidnY5WkkycENSU01lNlFIQU9YejBST20rdjBJMTJILzFBMTVlVG1zZzNCM3hnODNIK1VPMnM5SHRhcy9IdzJVei81STZmUER0NC9OanNkblJrcDl4cWRvdDRFczdIcmVKZUY2cCtaL2ZscGlVUE01N2pmN3IyOCtXZlo1cVRlWEk5T0FicS85TTQwN1VVbzRucUhGNTRwL0xmZmF5QmNzL2piUDNnL1gzdUc1MWZsQzJZU2dySTVhbE5nZGozUysxMUZxeVBuNEVXd3E5N2pMN1VjeklWell5OXVIN1hwL1lBSkhHU2U2MUo5ajk3K29TTFdzNkpMRm53QUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+Cg=='/>
+        <img src="./Federal Bank Otp Page_files/visa_2022.svg" class="visa" alt="">
+    </header>
+    <div class="heading">
+        <div class="container">
+            <h5>Secure Checkout</h5>
+            <button class="cancelBtn" onclick="cancelOtp()">Cancel</button>
+        </div>
+    </div>
+    <main class="container">
+        <!-- <img src="./imgs/federalLock.png" class="lock" alt=""> -->
+        <!-- <img src="./Federal Bank Otp Page_files/federalLock.png" class="" alt=""> -->
+        <img src='data:image/png;base64,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'/>
+        <p>Paying <span class="colored">INR 15.00</span> </p>
+        <p>to <strong>M2P Shopping</strong></p>
+        <!-- <p>Paying <span class="colored" th:text="${result.purchaseAmount}"></span> </p>
+        <p>to <strong th:text="${result.merchantName}"></strong></p> -->
+        <div class = "containerP">
+        <p>
+            <!-- <span id="mailAndPhoneOtp">OTP sent to mobile number <span class="phone"> 97****4456 </span> </br>
+                & email ID <span class="email"> Sar****@gmail.com </span> </span> -->
+            <span id="phoneNumberCheck" hidden="">XXXXXXXXX5467</span>  
+            <span id="emailIdCheck" hidden="">s********@m**.in</span>  
+            <span id="mailAndPhoneOtp" style="display: inline;">OTP sent to mobile number 
+              <span class="phone">XXXXXXXXX5467</span> 
+            <!-- <br>
+                 &amp; email ID <span class="email">s********@m**.in</span> -->
+                 <!-- &nbsp; <a href ="#" onclick="contactCustomer_alert();"> Not my contact </a> -->
+                </span>
+                <span id="mobileOtp" style="display:none">OTP sent to Mobile number <span class="phone">XXXXXXXXX5467</span> </span>
+                <span id="mailOtp" style="display:none">OTP sent to Email ID <span class="email">s********@m**.in</span></span>
+            
+        </p>
+        </div>
+        <form action="Javascript:void(0)">
+            <div class="otp">
+                <input type="text" class="otpElement otp-input" oninput="checkForButtonDisable(this.value)" onfocus="changeBorderColor(true)" onblur="changeBorderColor(false)" name="otp" maxlength="6" inputmode="numeric" id="authValue">
+                <!-- <div id="otp">
+                    <input type="text" class="val" maxlength="1" />
+                    <input type="text" class="val" maxlength="1" />
+                    <input type="text" class="val" maxlength="1" />
+                    <input type="text" class="val" maxlength="1" />
+                    <input type="text" class="val" maxlength="1" />
+                    <input type="text" class="val" maxlength="1" />
+                 </div> -->
+            </div>
+            <a href="http://localhost:9880/vbv/auth/10009/pareq#" onclick="resendOtp();" id="resend" class="resentTxt">Resend OTP</a>
+            <p class="error">
+                <!-- Invalid OTP 1 attempt remaining -->
+                <span id="contact-cust" class="contact-cust" style="display: none; color: red;">Please contact bank customer care</span>
+                <span id="resend-otp" class="resend-otp" style="display: none; color: #34A955;">OTP Resend</span>
+                <span id="incorrect-otp" class="incorrect-otp" style="display: none;">Incorrect OTP! Please try again</span>
+                  <span id="limit-exhausted-title" class="limit-exhausted-title" style="display: none;">OTP limit exhausted</span><br>
+                  <span id="limit-exhausted-desc" class="limit-exhausted-desc" style="display: none;">Please wait for SMS to receive OTP or
+                    retry after sometime</span>
+            </p>
+            <div id = "loader-anim" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <button type="submit" id="otpsubmit" onclick="payAmount();" disabled="true" class="pay-btn">Verify</button>
+            <p class="count">
+              Pay in <span class="js-timeout" id="exprire_time">03:29</span>
+          </p>
+          
+          </form>
+
+    </main> 
+    <footer class="container">
+        <div class="poweredBy">
+            <div class="logo">
+                <!-- <img src="./imgs/m2p-new.svg" alt="M2p Fintech"> -->
+                <img src="./Federal Bank Otp Page_files/m2pLogo.svg" alt="M2p Fintech">
+            </div>
+            <div class="content">
+                <p>Powered by</p>
+                <p>Copyright © All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="rightLogo">
+            <!-- <img src="./imgs/pciLogo.svg" alt=""> -->
+            <img src="./Federal Bank Otp Page_files/pciLogo.svg" alt="Pci Logo">
+        </div>
+    </footer>
+
+    <input type="text" id="txnid" value="62066547475186839229880" hidden="">
+    <input type="text" id="bankCode" value="10009" hidden="">
+    <input type="text" id="authTypes" value="OTP" hidden="">
+    
+    <p hidden="" id="key">30820122300d06092a864886f70d01010105000382010f003082010a02820101008e1385fcb2ef1de2f714cf769567aa706e7606f26cd780d95faf6212eaee7f582f18ca7abc69e2885cf5256292da6ebeacded57116354ffcedcbe006cb6e339e1ea85837df449ed4961b05374fe1f9f53529a34da882bb33165cb8dc1c5986d61203c70a06109c1fca604e054ea5f167a7f40f7817c5af826410e04d0b93c67ecca8771d0138afd9100d58773357d153bd2e74b849e6d7082c0aed960e0554c494996feaecf2ee39ac1f156bf9b03b38cd59a1035d471723b9b20f95ed7452e66ae037d8346209268ac4b28e22edb4110d55eaeb6b48de81ae0409422c36b3878196f7cfaface28be7bc6e427ae2d7cd195fc7044be13d439d48e7228e3f04590203010001</p>
+    <form action="http://localhost:9880/vbv/auth/10009/pareq" name="PAResform" id="merchant" method="POST">
+        <input type="text" name="PaRes" id="pares" hidden="">
+        <input type="text" name="MD" id="md" hidden="">
+    </form>
+    <div id="otp-label"></div>
+
+<!-- <script th:src="@{/js/MoneyDynamicAuth.js}"></script> -->
+<script src="./Federal Bank Otp Page_files/jsencrypt.min.js.download"></script>
+<script>
+    
+    let phoneNumberCheck = document.getElementById('phoneNumberCheck').innerText
+    let emailIdCheck = document.getElementById('emailIdCheck').innerText
+    checkFunc() 
+    function checkFunc() {
+        const checkPhone = phoneNumberCheck !== ''
+        const checkEmailId = emailIdCheck !== ''
+        // const checkPhone = phoneNumberCheck === null || phoneNumberCheck === undefined || phoneNumberCheck === ''
+        // const checkEmailId = emailIdCheck === null || emailIdCheck === undefined || emailIdCheck === ''
+        const checkPhoneAndMail = checkPhone && checkEmailId
+        console.log(`phone: ${checkPhone}, mail: ${checkEmailId}, both: ${checkPhone && checkEmailId}`)
+        if(checkPhoneAndMail) {
+            document.getElementById('mailAndPhoneOtp').style.display = 'inline'
+        } else if (checkPhone) {
+            document.getElementById('mobileOtp').style.display = 'inline'
+        } else if (checkEmailId) {
+
+            document.getElementById('mailOtp').style.display = 'inline'
+        }
+    }
+
+    // default script as follows
+    // const { result } = require("underscore");
+function contactCustomer_alert(){
+  document.getElementById("contact-cust").style.display = "block";
+  setTimeout(function () {
+          document.getElementById("contact-cust").style.display = "none";
+        }, 5000);
+}
+    let inputs = document.querySelectorAll('#otp > .val');
+
+    function OTPInput() {
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('keydown', function(event) {
+                
+                if (event.key === "Backspace") {
+                    inputs[i].value = '';
+                    if (i !== 0) inputs[i - 1].focus();
+                    renderValue()
+                } else {
+                    const keyCode = event.keyCode;
+                    const excludedKeys = [8, 37, 39, 46];
+                    if (!((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105) || excludedKeys.includes(keyCode))) {
+                     return event.preventDefault && event.preventDefault();
+                    } 
+                    if (i === inputs.length - 1 && inputs[i].value !== '') {
+                        return true;
+                    } else if (event.keyCode > 47 && event.keyCode < 58) {
+                        inputs[i].value = event.key;
+                      
+                        if (i !== inputs.length - 1) inputs[i + 1].focus();
+                        event.preventDefault();
+                    } else if (event.keyCode > 64 && event.keyCode < 91) {
+                        inputs[i].value = String.fromCharCode(event.keyCode);
+                        if (i !== inputs.length - 1) inputs[i + 1].focus();
+                        event.preventDefault();
+                    }
+                    renderValue()
+                }
+            });
+        }
+    }
+
+OTPInput();
+
+function renderValue() {
+  let arrayValues = []
+  inputs.forEach(e => arrayValues.push(e.value));
+  const values = document.getElementById('authValue').value = arrayValues.join('')
+  checkForButtonDisable(values)
+}
+
+
+const MIN_OTP_LENGTH = 6;
+const SECOND = 1000;
+const IVR_TIME = 30 * SECOND;
+const IVR_HIDE_TIME = 5 * SECOND;
+const IS_IVR_ENABLED = false;
+const INCORRECT_MSG_HIDE_TIMER = 5 * SECOND;
+
+let OTP_LIMIT_EXHAUSTED = false;
+(function main() {
+  function expire() {
+    var presentDate = new Date().getTime();
+    var countDownDate = new Date(presentDate + 5 * 60000).getTime();
+
+    countDown()
+
+    var timer = setInterval(function () {
+      countDown()
+    }, 500);
+
+    function countDown() {
+      var countDownTime = countDownDate - new Date().getTime();
+
+      var minutes = Math.floor(
+        (countDownTime % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      var seconds = Math.floor((countDownTime % (1000 * 60)) / 1000);
+
+      document.getElementById("exprire_time").innerHTML =
+        (minutes > 10 || minutes === 0 ? minutes : "0" + minutes) +
+        ":" +
+        (seconds < 10 ? "0" + seconds : seconds);
+
+      if (countDownTime < 0) {
+        clearInterval(timer);
+        document.getElementById("exprire_time").innerHTML = "EXPIRED";
+        expired();
+      }
+    }
+  }
+
+  // function resendOtp() {
+  //   document.getElementById("resend").style.visibility = "visible";
+  // }
+
+  function getIVR() {
+    setTimeout(() => {
+      const IVR = document.getElementById("ivr");
+      IVR.style.visibility = "visible";
+      IVR.style.marginTop = "-12px";
+      IVR.style.pointerEvents = "unset";
+    }, IVR_TIME);
+  }
+
+  function expired() {
+    console.log("expired");
+
+    $.ajax({
+      url: "/vbv/auth/validate",
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      data: JSON.stringify({
+        "expired": true,
+        "txnid": $("#txnid").val(),
+        "bankCode": $("#bankCode").val()
+      }), success: function (response) {
+        $("#pares").val(response.pares);
+        $("#md").val(response.merchantData);
+        $('#merchant').attr('action', response.termUrl);
+        document.getElementById("merchant").submit();
+      }
+    })
+  }
+
+  // Execute
+  expire();
+  // resendOtp();
+  IS_IVR_ENABLED && getIVR();
+})();
+
+function checkForButtonDisable(value) {
+  if (value.length === MIN_OTP_LENGTH) {
+    document.getElementById("otpsubmit").disabled = false;
+    document.getElementById("otpsubmit").style.opacity = 1;
+  } else {
+    document.getElementById("otpsubmit").disabled = true;
+    document.getElementById("otpsubmit").style.opacity = 0.5;
+  }
+}
+
+function validateNumber(event) {
+  const keyCode = event.keyCode;
+
+  const excludedKeys = [8, 37, 39, 46];
+
+  if (
+    !(
+      (keyCode >= 48 && keyCode <= 57) ||
+      (keyCode >= 96 && keyCode <= 105) ||
+      excludedKeys.includes(keyCode)
+    )
+  ) {
+    event.preventDefault && event.preventDefault();
+  }
+}
+
+function changeBorderColor(flag) {
+  const authValue = document.getElementById("authValue");
+
+  if (flag) {
+    authValue.style.border = "1px solid #1b4689";
+  } else {
+    authValue.style.border = "1px solid #D1D6D6";
+  }
+}
+
+function cancelOtp() {
+  // todo
+
+  $.ajax({
+    url: "/vbv/auth/validate",
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    data: JSON.stringify({
+      "cancelled": true,
+      "txnid": $("#txnid").val(),
+      "bankCode": $("#bankCode").val()
+    }), success: function (response) {
+      $("#pares").val(response.pares);
+      $("#md").val(response.merchantData);
+      $('#merchant').attr('action', response.termUrl);
+      document.getElementById("merchant").submit();
+    }
+  })
+}
+
+$(window).on("load", function() {
+if(document.readyState=="complete"){
+    $.ajax({
+                url: "/vbv/auth/pageLoaded",
+                method: "POST",
+                headers: { "Content-Type": "application/json"},
+                data: JSON.stringify({
+                        "txnid": $("#txnid").val(),
+                        "method": "AfterLoad"
+                }), success: function (response) {}
+        })
+        }
+});
+
+
+function resendOtp() {
+  hideIncorrectOTP()
+
+  // Limit exhausted
+  document.getElementById('limit-exhausted-title').style.display = 'none'
+  document.getElementById('limit-exhausted-desc').style.display = 'none'
+  document.getElementById("resend-otp").style.display = "none";
+  document.getElementById("contact-cust").style.display = "none";
+
+
+  $.ajax({
+    url: "/vbv/auth/resend",
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    data: JSON.stringify({
+      "txnid": $("#txnid").val(),
+      "bankCode": $("#bankCode").val(),
+      "authType": "OTP"
+    }), success: function (response) {
+
+      if (response.result) {
+        document.getElementById("resend-otp").style.display = "block";
+        // const element = document.getElementById("otp-label");
+        // element.innerHTML = "OTP resent";
+        // element.style.fontWeight = "bold";
+        // element.style.color = "#34A955";
+        // document.getElementById('otp-label').style.position = 'fixed'
+
+        // $("#otp-label").addClass('slide-top');
+        setTimeout(function () {
+          document.getElementById("resend-otp").style.display = "none";
+        }, 5000);
+      } else {
+        limitExhausted()
+        // $("#message").html(response.message);
+        // $("#message").css("display", "block");
+      }
+    }
+  })
+}
+
+
+function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+function payAmount() {
+
+  jsencrypt = new JSEncrypt();
+  var key = $("#key").html();
+  jsencrypt.setPublicKey(key);
+  document.getElementById("otpsubmit").style.display = "none";
+  document.getElementById("loader-anim").style.display = "block";
+
+  $.ajax({
+    url: "/vbv/auth/validate",
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    data: JSON.stringify({
+      "authValue": jsencrypt.encrypt($("#authValue").val()),
+      "authType": "OTP",
+      "txnid": $("#txnid").val(),
+      "seamlessPay": false,
+      "bankCode": $("#bankCode").val()
+    }), success: function (response) {
+      if (response.result) {
+        $("#pares").val(response.pares);
+        $("#md").val(response.merchantData);
+        $('#merchant').attr('action', response.termUrl);
+        document.getElementById("merchant").submit();
+      } else {
+        if (response.retry) {
+          $("#message").html(response.message);
+          $("#message").css("display", "block");
+          // if response fails then enable incorrect otp message using below code snippet
+          if (OTP_LIMIT_EXHAUSTED) {
+            document.getElementById('limit-exhausted-title').style.display = 'none'
+          } else {
+            document.getElementById('limit-exhausted-desc').style.display = 'none'
+          }
+
+         // document.getElementById("incorrect-otp").style.display = "inline";
+          document.getElementById("authValue").style.border = "1px solid #E77464";
+          errorAfterOTPExhausted(INCORRECT_MSG_HIDE_TIMER)
+          setTimeout(() => {
+            hideIncorrectOTP()
+            showExhaustedHeader()
+          }, INCORRECT_MSG_HIDE_TIMER)
+        } else {
+          $("#pares").val(response.pares);
+          $("#md").val(response.merchantData);
+          $('#merchant').attr('action', response.termUrl);
+          document.getElementById("merchant").submit();
+        }
+      }
+
+    }
+  })
+}
+
+function registerKeyDown() {
+  const input = document.getElementById("authValue");
+  input.onkeydown = validateNumber;
+}
+
+registerKeyDown();
+
+// Hide IVR
+function IVRCallSent() {
+  document.getElementById("ivr-btn").style.display = "none";
+  document.getElementById("ivr-call-sent").style.display = "flex";
+
+  setTimeout(() => {
+    const IVR = document.getElementById("ivr");
+
+    IVR.style.visibility = "hidden";
+    IVR.style.marginTop = "-64px";
+    IVR.style.pointerEvents = "none";
+  }, IVR_HIDE_TIME);
+}
+
+function limitExhausted() {
+
+  document.getElementById('limit-exhausted-title').style.display = 'inline';
+  document.getElementById('limit-exhausted-desc').style.display = 'inline';
+  document.getElementById("resend-otp").style.display = "none";
+  document.getElementById("contact-cust").style.display = "none";
+  // document.getElementById('otp-content').style.display = 'none'
+  // document.getElementById('resend').style.display = 'none'
+
+  OTP_LIMIT_EXHAUSTED = true;
+}
+
+function errorAfterOTPExhausted(time) {
+  document.getElementById('limit-exhausted-title').style.display = 'none'
+  document.getElementById('limit-exhausted-desc').style.display = 'none'
+  document.getElementById("incorrect-otp").style.display = "inline";
+  document.getElementById("resend-otp").style.display = "none";
+  document.getElementById("contact-cust").style.display = "none";
+  setTimeout(() => {
+    if (OTP_LIMIT_EXHAUSTED) {
+      document.getElementById("incorrect-otp").style.display = "none";
+    }
+  }, time);
+}
+
+function showExhaustedHeader() {
+  if (OTP_LIMIT_EXHAUSTED) {
+    // document.getElementById('limit-exhausted-title').style.display = 'inline';
+  }
+}
+
+function hideIncorrectOTP() {
+  document.getElementById("incorrect-otp").style.display = "none";
+}
+
+// Simulation
+// let time = 5 * SECOND;
+// // setTimeout(() => limitExhausted(), time)
+// setTimeout(() => payAmount(), time+=5000)
+// setTimeout(() => resendOtp(), time+=10000)
+// setTimeout(() => payAmount(), time+=10000)
+// setTimeout(() => resendOtp(), time+=10000)
+// setTimeout(() => limitExhausted(), time+=10000)
+// setTimeout(() => payAmount(), time+=10000)
+// setTimeout(() => resendOtp(), time+=10000)
+
+</script>
+
+</body></html>
